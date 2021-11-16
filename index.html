@@ -12,26 +12,32 @@
         <h1>Rock, Paper or Scissor Game</h1>
     </header>
     <main>
-        <div id="game_container">
+        <section id="start_section">
             <p>Choice one option and play against Eva</p>
             <p>You have 5 rounds until one player Wins</p>
             <div id="options_container">
-               <div  class="option_box" id="rock">Rock</div>
-               <div class="option_box" id="paper">Paper</div>
-               <div class="option_box" id="scissors">Scissors</div>
+                <div class="option_box" id="rock">Rock</div>
+                <div class="option_box" id="paper">Paper</div>
+                <div class="option_box" id="scissors">Scissors</div>
             </div>
-        </div>
-        <button class="btn_box" id="start_btn">Play</button>
-        <h2 id="round">Round 1</h2>
-        <div id="result_container">
-            <div class="option_box" id="player_result">You</div>
-            <img src="#" alt="#">
-            <div class="option_box" id="eva_result">Eva</div>
-        </div>
-        <div id="counter_container">
-            <span id="player_counter"></span>            
-            <span id="eva_counter"></span>
-        </div>
+            <button class="btn_box" id="start_btn">Play</button>
+        </section>
+        <section id="result_section">
+            <h2 id="round">Round 1</h2>
+            <div id="result_container">
+                <div class="result_box">
+                    <p>You</p>
+                    <div class="option_box" id="player_result"></div>
+                    <span id="player_counter">0</span>   
+                </div>
+                <img src="#" alt="VS">
+                <div class="result_box" >
+                    <p>Eva</p>
+                    <div class="option_box" id="eva_result"></div>
+                    <span id="eva_counter">0</span>
+                </div>
+            </div>
+        </section>
         <button class="btn_box" id="next_round_btn">Next Round</button>
     </main>
     <footer>
