@@ -21,13 +21,6 @@ main{
     .btn_box{
         @extend %btn;
     }
-    .option_box{
-        height: 80px;
-        width: 25%;
-        border: 1px solid black;
-        text-align: center;
-        padding-top: 5px;
-    }
 }
 
 

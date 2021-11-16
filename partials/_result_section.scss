@@ -2,7 +2,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    width: 60%;
+    margin-bottom: 20px;
     #round{
         margin-top: 30px;
         color: blue;
@@ -14,6 +15,16 @@
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        align-items: center;
         width: 100%;
+        height: 100px;
+        .result_box{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .option_box{
+                @extend %option_box;
+            }
+        }
     }
 }

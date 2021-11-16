@@ -8,6 +8,8 @@
         width: 100%;
         display: flex;
         justify-content: space-between;
-       
+       .option_box{
+        @extend %option_box
+       }
     }
 }
