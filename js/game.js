@@ -59,8 +59,8 @@ nextBtn.addEventListener('click', ()=>{
 resteBtn.addEventListener('click', ()=>{
     playBtn.style.display = "flex";
     round.innerHTML = 1;
+    i = 1;
     resteBtn.style.display = "none";
-
 })
  
 
