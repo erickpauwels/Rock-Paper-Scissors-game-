@@ -8,8 +8,24 @@
         width: 100%;
         display: flex;
         justify-content: space-between;
-       .option_box{
-        @extend %option_box
-       }
+       
     }
 }
+
+.rock{
+    background-color: blue;
+    @extend %option_box;
+    color: white;
+   }
+
+   .paper{
+    background-color: red;
+    @extend %option_box;
+    color: white;
+   }
+
+   .scissors{
+    background-color: green;
+    @extend %option_box;
+    color: white;
+   }
