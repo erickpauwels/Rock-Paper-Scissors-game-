@@ -38,12 +38,9 @@ playBtn.addEventListener('click', () =>{
     evaColors(eva);
     nextBtn.style.display = "flex";
     playBtn.style.display = "none";
+    // fucntions
     game(player,eva);
-    if (i == 5) {
-        playBtn.style.display = "none";
-        nextBtn.style.display = "none";
-        resteBtn.style.display = "flex"
-    }
+    finalRound();
 })
 
 // Next Round  
@@ -64,6 +61,8 @@ resteBtn.addEventListener('click', ()=>{
     round.innerHTML = 1;
     i = 1;
     resteBtn.style.display = "none";
+    playerCounter.innerHTML = 0;
+    evaCounter.innerHTML = 0;
 })
  
 

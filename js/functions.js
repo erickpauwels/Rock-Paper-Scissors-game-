@@ -18,16 +18,26 @@ function evaColors(eva){
     }}
 
 function game(player,eva){
+    
     switch (true) {
         case player === eva:
             console.log("TIE!");
             break;
         case player === 1 && eva === 3 || player ===2 && eva === 1 ||  player ===3 && eva === 2:
             console.log("Player Wins!");
+            playerCounter.innerHTML++
             break;
         default:
-            console.log("You lose, Eva wins!");
+            console.log("Eva wins!");
+            evaCounter.innerHTML++
             break;
     }
 }
 
+function finalRound() {
+    if (i == 5) {
+        playBtn.style.display = "none";
+        nextBtn.style.display = "none";
+        resteBtn.style.display = "flex"
+    }
+}
