@@ -6,6 +6,7 @@ var eva;
 nextBtn.style.display = "none";
 resteBtn.style.display = "none"
 
+disableBtn();
 // Player Events 
 
 rockBtn.addEventListener('click', ()=>{
@@ -13,6 +14,7 @@ rockBtn.addEventListener('click', ()=>{
     playerResult.innerHTML = "Rock";
     playerResult.style.color = "white";
     player = 1;
+    disableBtn();
 })
 
 paperBtn.addEventListener('click', ()=>{
@@ -20,6 +22,7 @@ paperBtn.addEventListener('click', ()=>{
     playerResult.innerHTML = "Paper";
     playerResult.style.color = "white";
     player = 2  
+    disableBtn();
 })
 
 scissorsBtn.addEventListener('click', ()=>{
@@ -27,7 +30,10 @@ scissorsBtn.addEventListener('click', ()=>{
     playerResult.innerHTML = "Scissors";
     playerResult.style.color = "white";
     player = 3  
+    disableBtn();
 })
+
+
 
 // Start Game
 
@@ -52,6 +58,11 @@ nextBtn.addEventListener('click', ()=>{
     nextBtn.style.display = "none";
     i = i + 1;
     round.innerHTML = i;
+    player = undefined;
+    // removeWinnerText(player);
+    console.log(player);
+    disableBtn();
+    resetStyles();
 })
 
 
@@ -63,6 +74,10 @@ resteBtn.addEventListener('click', ()=>{
     resteBtn.style.display = "none";
     playerCounter.innerHTML = 0;
     evaCounter.innerHTML = 0;
+    player = undefined;
+    console.log(player);
+    disableBtn();
+    resetStyles();
 })
  
 

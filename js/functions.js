@@ -25,6 +25,8 @@ function game(player,eva){
             break;
         case player === 1 && eva === 3 || player ===2 && eva === 1 ||  player ===3 && eva === 2:
             console.log("Player Wins!");
+            /* const playerWin = document.createTextNode('You win');
+            vsBox.append(playerWin); */
             playerCounter.innerHTML++
             break;
         default:
@@ -41,3 +43,28 @@ function finalRound() {
         resteBtn.style.display = "flex"
     }
 }
+
+function disableBtn() {
+    if (player == undefined) {
+        playBtn.disabled = true;
+    } else {
+        playBtn.disabled = false;
+    }
+}
+
+function resetStyles() {
+    playerResult.style.background='none';
+    playerResult.innerHTML = "";
+    playerResult.style.color = "";
+    // eva styles
+    evaResult.style.background='none';
+    evaResult.innerHTML = "";
+    evaResult.style.color = "";
+    player = 0
+}
+
+/* function removeWinnerText(player) {
+    if (player ==undefined) {
+        vsBox.remove(playerWin);
+    }
+} */
