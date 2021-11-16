@@ -2,43 +2,65 @@
 var player;
 var eva;
 
+// Hidden Buttons 
+nextBtn.style.display = "none";
+resteBtn.style.display = "none"
+
 // Player Events 
 
 rockBtn.addEventListener('click', ()=>{
-    playerResult.classList.add('rock');
+    playerResult.style.background='blue';
     playerResult.innerHTML = "Rock";
+    playerResult.style.color = "white";
     player = 1;
-    console.log(player);
 })
 
 paperBtn.addEventListener('click', ()=>{
-    playerResult.classList.add('paper');
+    playerResult.style.background='red';
     playerResult.innerHTML = "Paper";
+    playerResult.style.color = "white";
     player = 2  
-    console.log(player)
 })
 
 scissorsBtn.addEventListener('click', ()=>{
-    playerResult.classList.add('scissors');
+    playerResult.style.background='green';
     playerResult.innerHTML = "Scissors";
+    playerResult.style.color = "white";
     player = 3  
-    console.log(player);
 })
 
 // Eva Events
 
 playBtn.addEventListener('click', () =>{
     eva = Math.floor(Math.random()*(3+1-1)+1);
-    
     console.log(`soy eva con numero ${eva}`);
     console.log(`Soy el player, ${player}`);
-    switch (eva) {
-        case (eva === 1):
-            evaResult.classList.add('rock');
-            console.log(eva);
-            break;
-        case (eva === 2)    :
-            evaResult.classList.add('paper');
-            break;
+    evaColors(eva);
+    nextBtn.style.display = "flex";
+    playBtn.style.display = "none";
+})
+
+// Next Round Events 
+
+var i = 1;
+
+nextBtn.addEventListener('click', ()=>{
+    playBtn.style.display = "flex";
+    nextBtn.style.display = "none";
+    i = i + 1;
+    round.innerHTML = i;
+    if (i === 5) {
+        playBtn.style.display = "none";
+        nextBtn.style.display = "none";
+        resteBtn.style.display = "flex"
     }
 })
+
+resteBtn.addEventListener('click', ()=>{
+    playBtn.style.display = "flex";
+    round.innerHTML = 1;
+    resteBtn.style.display = "none";
+
+})
+ 
+

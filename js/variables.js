@@ -14,5 +14,6 @@ const evaResult = document.getElementById("eva_result");
 const nextBtn = document.getElementById("next_round_btn");
 const playerCounter = document.getElementById("player_counter");
 const evaCounter = document.getElementById("eva_counter");
+const resteBtn = document.getElementById("reset_btn")
 
 
