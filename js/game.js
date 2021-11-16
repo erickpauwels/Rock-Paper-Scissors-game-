@@ -33,11 +33,12 @@ scissorsBtn.addEventListener('click', ()=>{
 
 playBtn.addEventListener('click', () =>{
     eva = Math.floor(Math.random()*(3+1-1)+1);
-    console.log(`soy eva con numero ${eva}`);
-    console.log(`Soy el player, ${player}`);
+    console.log(`Eva= ${eva}`);
+    console.log(`Player = ${player}`);
     evaColors(eva);
     nextBtn.style.display = "flex";
     playBtn.style.display = "none";
+    game(player,eva);
 })
 
 // Next Round Events 

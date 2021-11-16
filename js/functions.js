@@ -16,3 +16,23 @@ function evaColors(eva){
     } else {
         evaResult.classList.add('eva');
     }}
+
+function game(player,eva){
+    switch (true) {
+        case player === eva:
+            console.log("TIE!");
+            break;
+        case player === 1 && eva === 3:
+            console.log("Player wins with rock");
+            break;
+        case player ===2 && eva === 1:
+            console.log("PLayer wins with paper");
+            break;
+        case player ===3 && eva === 2:
+            console.log("Player wins with Scissors");
+            break;
+        default:
+            console.log("You lose, Eva wins!");
+            break;
+    }
+}
