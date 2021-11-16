@@ -29,7 +29,7 @@ scissorsBtn.addEventListener('click', ()=>{
     player = 3  
 })
 
-// Eva Events
+// Start Game
 
 playBtn.addEventListener('click', () =>{
     eva = Math.floor(Math.random()*(3+1-1)+1);
@@ -39,9 +39,14 @@ playBtn.addEventListener('click', () =>{
     nextBtn.style.display = "flex";
     playBtn.style.display = "none";
     game(player,eva);
+    if (i == 5) {
+        playBtn.style.display = "none";
+        nextBtn.style.display = "none";
+        resteBtn.style.display = "flex"
+    }
 })
 
-// Next Round Events 
+// Next Round  
 
 var i = 1;
 
@@ -50,13 +55,10 @@ nextBtn.addEventListener('click', ()=>{
     nextBtn.style.display = "none";
     i = i + 1;
     round.innerHTML = i;
-    if (i === 5) {
-        playBtn.style.display = "none";
-        nextBtn.style.display = "none";
-        resteBtn.style.display = "flex"
-    }
 })
 
+
+// Reset Game 
 resteBtn.addEventListener('click', ()=>{
     playBtn.style.display = "flex";
     round.innerHTML = 1;

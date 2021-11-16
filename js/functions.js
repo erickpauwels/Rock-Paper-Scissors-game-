@@ -30,3 +30,4 @@ function game(player,eva){
             break;
     }
 }
+
