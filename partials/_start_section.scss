@@ -1,0 +1,13 @@
+
+#start_section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    #options_container{
+        margin-top: 30px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+       
+    }
+}
