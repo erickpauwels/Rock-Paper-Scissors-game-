@@ -46,6 +46,7 @@ playBtn.addEventListener('click', () =>{
     playBtn.style.display = "none";
     // fucntions
     game(player,eva);
+    // winnerText(player,eva);
     finalRound();
 })
 

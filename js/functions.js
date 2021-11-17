@@ -21,16 +21,17 @@ function game(player,eva){
     
     switch (true) {
         case player === eva:
+            vsBox.textContent = 'Tie';
             console.log("TIE!");
             break;
         case player === 1 && eva === 3 || player ===2 && eva === 1 ||  player ===3 && eva === 2:
+            vsBox.textContent = 'You win';
             console.log("Player Wins!");
-            /* const playerWin = document.createTextNode('You win');
-            vsBox.append(playerWin); */
             playerCounter.innerHTML++
             break;
         default:
-            console.log("Eva wins!");
+            vsBox.textContent = 'Eva wins!';
+            // console.log("Eva wins!");
             evaCounter.innerHTML++
             break;
     }
@@ -63,8 +64,13 @@ function resetStyles() {
     player = 0
 }
 
-/* function removeWinnerText(player) {
-    if (player ==undefined) {
-        vsBox.remove(playerWin);
+/* function winnerText(p,e) {
+    if (p === 1) {
+        vsBox.textContent = 'You win';
+        // vsBox.remove(playerWin);
+    } else if (e === 1) {
+        vsBox.textContent = 'Eva win';
+    } else{
+        vsBox.textContent = 'Tie';
     }
 } */
