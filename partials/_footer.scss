@@ -1,0 +1,13 @@
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    font-family: 'Roboto', sans-serif;
+    i{
+        color: black;
+        margin-left: 10px;
+        font-size: 2rem;
+    }
+}
