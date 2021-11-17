@@ -61,14 +61,13 @@ nextBtn.addEventListener('click', ()=>{
     player = undefined;
     nextBtn.disabled = true;
     console.log(player);
-    disableBtn();
     resetStyles();
 })
 
 
 // Reset Game 
 resteBtn.addEventListener('click', ()=>{
-    playBtn.style.display = "flex";
+    playBtn.disabled = true;
     round.innerHTML = 1;
     i = 1;
     resteBtn.style.display = "none";
@@ -76,7 +75,8 @@ resteBtn.addEventListener('click', ()=>{
     evaCounter.innerHTML = 0;
     player = undefined;
     console.log(player);
-    disableBtn();
+    nextBtn.style.display ="flex";
+    nextBtn.disabled = true;
     resetStyles();
 })
  

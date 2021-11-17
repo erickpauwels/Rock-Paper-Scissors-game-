@@ -1,7 +1,17 @@
 %btn{
+    text-align: center;
     margin-top: 30px;
-    height: 30px;
-    width: 30%;
+    border-radius: 10px;
+    height: 50px;
+    width: 120px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+    &:hover{
+        cursor: pointer;
+    }
+    justify-content: center;
+    align-items: center;
 }
 
 %option_box{
@@ -10,5 +20,5 @@
     border: 1px solid black;
     text-align: center;
     padding-top: 5px;
-    margin: 10px;
+    margin: 10px
 }

@@ -39,9 +39,9 @@ function game(player,eva){
 
 function finalRound() {
     if (i == 5) {
-        playBtn.style.display = "none";
+        console.log("Game Over");
         nextBtn.style.display = "none";
-        resteBtn.style.display = "flex"
+        resteBtn.style.display = "flex";
     }
 }
 
