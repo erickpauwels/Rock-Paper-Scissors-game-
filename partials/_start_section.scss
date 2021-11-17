@@ -4,7 +4,7 @@
     flex-direction: column;
     align-items: center;
     #options_container{
-        margin-top: 30px;
+        margin-top: 20px;
         width: 100%;
         display: flex;
         justify-content: space-between;   
@@ -13,20 +13,50 @@
 }
 
 .rock{
-    background-color: blue;
-    @extend %option_box;
-    color: white;
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    align-items: center;
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgb(0, 204, 255);
+    &:hover{
+        cursor: pointer;
+    }
+    img{
+        width: 65px;
+        margin-top: 15px;
+    }
    }
 
    .paper{
-    background-color: red;
-    @extend %option_box;
-    color: white;
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    align-items: center;
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgb(0, 204, 255);
+    &:hover{
+        cursor: pointer;
+    }
+    img{
+        width:87px;
+        margin-top: 15px;
+    }
    }
 
    .scissors{
-    background-color: green;
-    @extend %option_box;
-    color: white;
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    align-items: center;
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgb(0, 204, 255);
+    &:hover{
+        cursor: pointer;
+    }
+    img{
+        width:76px;
+        margin-top: 15px;
+    }
    }
 

@@ -3,14 +3,14 @@ var player;
 var eva;
 
 // Hidden Buttons 
-nextBtn.style.display = "none";
+nextBtn.disabled = true;
 resteBtn.style.display = "none"
 
 disableBtn();
 // Player Events 
 
 rockBtn.addEventListener('click', ()=>{
-    playerResult.style.background='blue';
+    // playerResult.backgorund-image = "url(/assets/rock.png)";
     playerResult.innerHTML = "Rock";
     playerResult.style.color = "white";
     player = 1;
@@ -42,8 +42,9 @@ playBtn.addEventListener('click', () =>{
     console.log(`Eva= ${eva}`);
     console.log(`Player = ${player}`);
     evaColors(eva);
-    nextBtn.style.display = "flex";
-    playBtn.style.display = "none";
+    nextBtn.disabled = false;
+    // playBtn.style.display = "none";
+    playBtn.disabled = true;
     // fucntions
     game(player,eva);
     // winnerText(player,eva);
@@ -55,12 +56,10 @@ playBtn.addEventListener('click', () =>{
 var i = 1;
 
 nextBtn.addEventListener('click', ()=>{
-    playBtn.style.display = "flex";
-    nextBtn.style.display = "none";
     i = i + 1;
     round.innerHTML = i;
     player = undefined;
-    // removeWinnerText(player);
+    nextBtn.disabled = true;
     console.log(player);
     disableBtn();
     resetStyles();

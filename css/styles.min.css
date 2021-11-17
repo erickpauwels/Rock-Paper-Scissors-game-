@@ -4,7 +4,7 @@ main .btn_box {
   width: 30%;
 }
 
-.rock, .paper, .scissors, #result_section #result_container .result_box .option_box {
+#result_section #result_container .result_box .option_box {
   height: 80px;
   width: 80px;
   border: 1px solid black;
@@ -20,19 +20,46 @@ main .btn_box {
   text-decoration: none;
 }
 
+body {
+  background: #020024;
+  background: linear-gradient(180deg, #020024 0%, #090979 34%, #072e91 51%, #00d4ff 100%);
+}
+
 main {
   margin: 5%;
   padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid black;
+  border-radius: 10px;
+  background: rgba(216, 216, 216, 0.356);
+  box-shadow: 17px 20px 17px -9px rgba(0, 0, 0, 0.44);
+  -webkit-box-shadow: 17px 20px 17px -9px rgba(0, 0, 0, 0.44);
+  -moz-box-shadow: 17px 20px 17px -9px rgba(0, 0, 0, 0.44);
 }
 
 main P {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 1rem;
+  color: white;
   margin: 5px;
+}
+
+main hr {
+  margin-top: 15px;
+  width: 20%;
+  color: #a3a3a3;
+}
+
+header {
+  text-align: center;
+}
+
+header h1 {
+  margin: 30px 10px 0px 10px;
+  font-family: 'Josefin Sans', sans-serif;
+  color: white;
+  font-size: 2rem;
 }
 
 #start_section {
@@ -42,25 +69,64 @@ main P {
 }
 
 #start_section #options_container {
-  margin-top: 30px;
+  margin-top: 20px;
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
 
 .rock {
-  background-color: blue;
-  color: white;
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  align-items: center;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #00ccff;
+}
+
+.rock:hover {
+  cursor: pointer;
+}
+
+.rock img {
+  width: 65px;
+  margin-top: 15px;
 }
 
 .paper {
-  background-color: red;
-  color: white;
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  align-items: center;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #00ccff;
+}
+
+.paper:hover {
+  cursor: pointer;
+}
+
+.paper img {
+  width: 87px;
+  margin-top: 15px;
 }
 
 .scissors {
-  background-color: green;
-  color: white;
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  align-items: center;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #00ccff;
+}
+
+.scissors:hover {
+  cursor: pointer;
+}
+
+.scissors img {
+  width: 76px;
+  margin-top: 15px;
 }
 
 #result_section {
