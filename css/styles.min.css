@@ -1,4 +1,4 @@
-main .btn_box {
+main #btns .btn_box {
   text-align: center;
   margin-top: 30px;
   border-radius: 10px;
@@ -11,17 +11,8 @@ main .btn_box {
   align-items: center;
 }
 
-main .btn_box:hover {
+main #btns .btn_box:hover {
   cursor: pointer;
-}
-
-#result_section #result_container .result_box .option_box {
-  height: 80px;
-  width: 80px;
-  border: 1px solid black;
-  text-align: center;
-  padding-top: 5px;
-  margin: 10px;
 }
 
 * {
@@ -60,6 +51,13 @@ main hr {
   margin-top: 15px;
   width: 20%;
   color: #a3a3a3;
+}
+
+main #btns {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 header {
@@ -188,6 +186,14 @@ footer i {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+#result_section #result_container .result_box .player_result {
+  background-image: url("/assets/rock.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 80px;
+  height: 80px;
 }
 
 #result_section #result_container #vs_winner_text_box {
