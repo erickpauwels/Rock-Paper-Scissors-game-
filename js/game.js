@@ -10,9 +10,12 @@ disableBtn();
 // Player Events 
 
 rockBtn.addEventListener('click', ()=>{
-    // playerResult.backgorund-image = "url(/assets/rock.png)";
-    playerResult.innerHTML = "Rock";
-    playerResult.style.color = "white";
+    playerResult.style.backgroundImage = "url('assets/rock.png')";
+    playerResult.style.backgroundSize = "contain";
+    playerResult.style.backgroundRepeat = "no-repeat";
+    playerResult.style.width = "80px";
+    playerResult.style.height= "80px";
+    // playerResult.classList.add('player_result');
     player = 1;
     disableBtn();
 })

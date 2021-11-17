@@ -34,14 +34,18 @@
                     <img src="assets/scissors.png" alt="scissors">
                 </div>
             </div>
-            <button class="btn_box" id="start_btn">Play</button>
+            <div id="btns">
+                <button class="btn_box" id="start_btn">Play</button>
+                <button class="btn_box" id="next_round_btn">Next Round</button>
+                <button class="btn_box" id="reset_btn">Play Again!</button>
+            </div>
         </section>
         <section id="result_section">
             <h2>Round <span id="round">1</span></h2>
             <div id="result_container">
                 <div class="result_box">
                     <p>You</p>
-                    <div class="option_box" id="player_result"></div>
+                    <div id="player_result"></div>
                     <span id="player_counter">0</span>   
                 </div>
                 <div id="vs_winner_text_box">
@@ -55,8 +59,6 @@
                 </div>
             </div>
         </section>
-        <button class="btn_box" id="next_round_btn">Next Round</button>
-        <button class="btn_box" id="reset_btn">Play Again!</button>
     </main>
     <footer>
         <p>Developed by Erick Pauwels 2021</p>

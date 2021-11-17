@@ -54,9 +54,7 @@ function disableBtn() {
 }
 
 function resetStyles() {
-    playerResult.style.background='none';
-    playerResult.innerHTML = "";
-    playerResult.style.color = "";
+
     // eva styles
     evaResult.style.background='none';
     evaResult.innerHTML = "";
@@ -64,13 +62,3 @@ function resetStyles() {
     player = 0
 }
 
-/* function winnerText(p,e) {
-    if (p === 1) {
-        vsBox.textContent = 'You win';
-        // vsBox.remove(playerWin);
-    } else if (e === 1) {
-        vsBox.textContent = 'Eva win';
-    } else{
-        vsBox.textContent = 'Tie';
-    }
-} */
