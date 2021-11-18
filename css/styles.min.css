@@ -195,7 +195,7 @@ footer i {
 }
 
 #result_section #result_container .result_box .rock_result {
-  background: url(/assets/rock.png);
+  background: url("../assets/rock.png");
   background-size: contain;
   background-repeat: no-repeat;
   width: 65px;
@@ -211,7 +211,7 @@ footer i {
 }
 
 #result_section #result_container .result_box .scissors_result {
-  background-image: url("/assets/scissors.png");
+  background: url("../assets/scissors.png");
   background-size: contain;
   background-repeat: no-repeat;
   width: 80px;
