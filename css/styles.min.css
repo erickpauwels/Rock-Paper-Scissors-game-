@@ -203,7 +203,7 @@ footer i {
 }
 
 #result_section #result_container .result_box .paper_result {
-  background-image: url(/assets/paper.png);
+  background-image: url("/assets/paper.png");
   background-size: contain;
   background-repeat: no-repeat;
   width: 80px;
@@ -211,7 +211,7 @@ footer i {
 }
 
 #result_section #result_container .result_box .scissors_result {
-  background-image: url(/assets/scissors.png);
+  background-image: url("/assets/scissors.png");
   background-size: contain;
   background-repeat: no-repeat;
   width: 80px;
