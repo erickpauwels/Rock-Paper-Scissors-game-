@@ -5,6 +5,8 @@ const rockBtn = document.getElementById("rock");
 const paperBtn = document.getElementById("paper");
 const scissorsBtn = document.getElementById("scissors");
 const playBtn = document.getElementById("start_btn");
+const iPlayer = document.getElementById("i");
+const iEva = document.getElementById("i_eva");
 
 
 // Result Section 
