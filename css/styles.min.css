@@ -195,7 +195,7 @@ footer i {
 }
 
 #result_section #result_container .result_box .rock_result {
-  background-image: url("/assets/rock.png");
+  background: url("https://imgur.com/UzYFQMJ");
   background-size: contain;
   background-repeat: no-repeat;
   width: 65px;
@@ -203,7 +203,7 @@ footer i {
 }
 
 #result_section #result_container .result_box .paper_result {
-  background-image: url("/assets/paper.png");
+  background: url(/assets/paper.png);
   background-size: contain;
   background-repeat: no-repeat;
   width: 80px;
