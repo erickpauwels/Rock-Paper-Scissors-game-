@@ -43,13 +43,14 @@ playBtn.addEventListener('click', () =>{
     eva = Math.floor(Math.random()*(3+1-1)+1);
     console.log(`Eva= ${eva}`);
     console.log(`Player = ${player}`);
+    console.log(`score = ${playerCounter}`);
     evaChoice(eva);
     nextBtn.style.display = "flex"
     playBtn.style.display = "none";
     // fucntions
     game(player,eva);
     // winnerText(player,eva);
-    finalRound();
+    finalRound(playerCounter.innerText, evaCounter.innerText);
 })
 
 // Next Round  
@@ -65,6 +66,7 @@ nextBtn.addEventListener('click', ()=>{
     console.log(player);
     disableBtn();
     resetStyles();
+    vsBox.textContent = '';
 })
 
 
@@ -80,6 +82,7 @@ resteBtn.addEventListener('click', ()=>{
     nextBtn.style.display ="none";
     disableBtn();
     resetStyles();
+    vsBox.textContent = '';
 })
  
 

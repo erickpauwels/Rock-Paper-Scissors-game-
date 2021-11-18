@@ -24,23 +24,25 @@ function game(player,eva){
             console.log("TIE!");
             break;
         case player === 1 && eva === 3 || player ===2 && eva === 1 ||  player ===3 && eva === 2:
-            vsBox.textContent = 'You win';
+            vsBox.textContent = 'You win this round';
             console.log("Player Wins!");
             playerCounter.innerHTML++
             break;
         default:
-            vsBox.textContent = 'Eva wins!';
+            vsBox.textContent = 'Eva wins this round!';
             evaCounter.innerHTML++
             break;
     }
 }
 
-function finalRound() {
+function finalRound(player, eva) {
     if (i == 5) {
         console.log("Game Over");
         nextBtn.style.display = "none";
         resteBtn.style.display = "flex";
+        winner(player,eva);
     }
+    
 }
 
 function disableBtn() {
@@ -59,3 +61,16 @@ function resetStyles() {
     player = 0
 }
 
+function winner(player,eva) {
+    var winner = document.createElement("h3");
+    if (player>eva) {
+        winner.textContent = 'YOU WIN!';
+        
+    }else if (player == eva) {
+        winner.textContent = 'GREAT TIE!';
+        
+    }else{
+        winner.textContent = 'EVA WINS, GAME OVER';
+    }
+    vsBox.append(winner);
+}
