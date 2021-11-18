@@ -1,18 +1,17 @@
-function evaColors(eva){
+function evaChoice(eva){
+    iEva.style.display = "none";
     if (eva ==1) {
-        evaResult.style.background = "blue"
-        evaResult.style.color = "white";
-        evaResult.innerHTML = "Rock";
+        evaResult.classList.add("rock_result");
+        evaResult.classList.remove("paper_result", "scissors_result");
+        
     } else if (eva == 2){
-        evaResult.style.background = "red"
-        evaResult.style.color = "white";
-        // evaResult.classList.add('paper');
-        evaResult.innerHTML = "Paper"
+        evaResult.classList.add("paper_result");
+        evaResult.classList.remove("rock_result", "scissors_result");
+
     } else if (eva == 3){
-        evaResult.style.background = "green"
-        evaResult.style.color = "white";
-        // evaResult.classList.add('scissors');
-        evaResult.innerHTML = "Scissors";
+        evaResult.classList.add("scissors_result");
+        evaResult.classList.remove("paper_result", "rock_result");
+
     } else {
         evaResult.classList.add('eva');
     }}
@@ -31,7 +30,6 @@ function game(player,eva){
             break;
         default:
             vsBox.textContent = 'Eva wins!';
-            // console.log("Eva wins!");
             evaCounter.innerHTML++
             break;
     }
@@ -54,11 +52,10 @@ function disableBtn() {
 }
 
 function resetStyles() {
-
-    // eva styles
-    evaResult.style.background='none';
-    evaResult.innerHTML = "";
-    evaResult.style.color = "";
+    playerResult.classList.remove("scissors_result","rock_result","paper_result");
+    evaResult.classList.remove("scissors_result","rock_result","paper_result");
+    iPlayer.style.display = "flex";
+    iEva.style.display = "flex";
     player = 0
 }
 
